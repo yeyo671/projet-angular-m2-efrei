@@ -1,0 +1,12 @@
+<div class="container" *ngIf="product">
+  <div class="row">
+    <div class="col-md-6">
+      <img [src]="product.imageUrl" class="img-fluid" alt="{{ product.title }}">
+    </div>
+    <div class="col-md-6">
+      <h1>{{ product.title }}</h1>
+      <p>{{ product.description }}</p>
+      <p><strong>{{ product.price | currency }}</strong></p>
+    </div>
+  </div>
+</div>
