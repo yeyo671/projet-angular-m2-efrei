@@ -4,6 +4,7 @@ import { SigninComponent } from './components/signin/signin.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { AddProductComponent } from './components/add-product/add-product.component';
+import { MyAdsComponent } from './components/my-ads/my-ads.component';
 import { AuthGuard } from './guards/auth.guard';
 
 export const routes: Routes = [
@@ -11,5 +12,6 @@ export const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: SigninComponent },
   { path: 'product/:id', component: ProductDetailComponent },
-  { path: 'add-product', component: AddProductComponent, canActivate: [AuthGuard] }
+  { path: 'add-product', component: AddProductComponent, canActivate: [AuthGuard] },
+  { path: 'my-ads', component: MyAdsComponent, canActivate: [AuthGuard] }
 ];

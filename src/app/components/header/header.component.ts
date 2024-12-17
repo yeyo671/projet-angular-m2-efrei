@@ -31,7 +31,15 @@ export class HeaderComponent {
     this.router.navigate(['/add-product']);
   }
 
+  navigateToMyAds() {
+    this.router.navigate(['/my-ads']);
+  }
+
   applyFilter() {
     this.filterChanged.emit({ name: this.filterName, price: this.filterPrice });
+  }
+
+  isHomePage(): boolean {
+    return this.router.url === '/';
   }
 }
