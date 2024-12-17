@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div
-      class="col-md-4 d-flex align-items-stretch"
+      class="col-md-4 d-flex align-items-stretch product"
       *ngFor="let product of filteredProducts"
     >
       <div class="card mb-4">
@@ -16,6 +16,7 @@
           <h5 class="card-title">{{ product.title }}</h5>
           <p class="card-text">{{ product.description }}</p>
           <p class="card-price">{{ product.price | currency }}</p>
+          <p class="card-user-email">Posted by: {{ product.userEmail }}</p>
         </div>
       </div>
     </div>

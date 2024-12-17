@@ -5,6 +5,10 @@ import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
 
+interface ProductWithUserEmail extends Product {
+  userEmail: string;
+}
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -13,8 +17,8 @@ import { HeaderComponent } from '../header/header.component';
   imports: [CommonModule, HeaderComponent]
 })
 export class HomeComponent implements OnInit {
-  products: Product[] = [];
-  filteredProducts: Product[] = [];
+  products: ProductWithUserEmail[] = [];
+  filteredProducts: ProductWithUserEmail[] = [];
 
   constructor(private productService: ProductService, private router: Router) {}
 

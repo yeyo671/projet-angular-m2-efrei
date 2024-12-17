@@ -44,9 +44,9 @@ export class AuthService {
     return localStorage.getItem('user') !== null;
   }
 
-  getCurrentUserEmail(): string {
+  getCurrentUserId(): string {
     const user = JSON.parse(localStorage.getItem('user') || '{}');
-    return user?.email || '';
+    return user?.uid || '';
   }
 
   async getUsers(): Promise<any[]> {
