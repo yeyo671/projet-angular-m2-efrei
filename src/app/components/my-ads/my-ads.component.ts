@@ -4,6 +4,7 @@ import { Product } from '../../models/product.model';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
+import { TruncatePipe } from '../../pipes/truncate.pipe';
 
 
 interface ProductWithUserEmail extends Product {
@@ -15,12 +16,12 @@ interface ProductWithUserEmail extends Product {
   standalone: true,
   templateUrl: './my-ads.component.html',
   styleUrls: ['./my-ads.component.scss'],
-  imports: [CommonModule, HeaderComponent]
+  imports: [CommonModule, HeaderComponent, TruncatePipe]
 })
 export class MyAdsComponent implements OnInit {
   products: ProductWithUserEmail[] = [];
 
-  constructor(private productService: ProductService, private router: Router) {}
+  constructor(private productService: ProductService, private router: Router) { }
 
   async ngOnInit() {
     const userId = this.productService.getCurrentUserId();

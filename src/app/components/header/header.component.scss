@@ -1,33 +1,37 @@
 .navbar {
-    height: 80px;
-    font-size: 1.2rem;
-  }
-  
-  .navbar-brand {
-    font-size: 1.5rem;
-  }
-  
-  .btn {
-    font-size: 1rem;
-  }
-  
-  .navbar-text {
-    font-size: 1rem;
-  }
-  
-  .form-control {
-    width: 200px;
-  }
-  
-  .navbar-nav {
-    margin-right: auto;
-  }
-  
-  .filter-form {
-    flex-grow: 1;
-    justify-content: center;
-  }
-  
-  .filter-form .form-control {
-    width: auto;
-  }
+  height: 80px;
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.btn {
+  font-size: 1rem;
+}
+
+.navbar-text {
+  font-size: 1rem;
+}
+
+.form-control {
+  width: 200px;
+}
+
+.navbar-nav {
+  margin-right: auto;
+}
+
+.filter-form {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.filter-form .form-control {
+  width: auto;
+}
+
+.email {
+  margin-right: 1rem;
+}

@@ -4,13 +4,16 @@ import { ProductService } from '../../services/product.service';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from '../header/header.component';
+import { HighlightDirective } from '../../directives/highlight.directive';
+import { containsWordValidator } from '../../validators/custom-validators';
 
 @Component({
   selector: 'app-add-product',
   standalone: true,
   templateUrl: './add-product.component.html',
   styleUrls: ['./add-product.component.scss'],
-  imports: [CommonModule, FormsModule, ReactiveFormsModule]
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, HeaderComponent, HighlightDirective]
 })
 export class AddProductComponent {
   addProductForm: FormGroup;
@@ -19,7 +22,7 @@ export class AddProductComponent {
   constructor(private fb: FormBuilder, private productService: ProductService, private router: Router) {
     this.addProductForm = this.fb.group({
       title: ['', Validators.required],
-      description: ['', Validators.required],
+      description: ['', [Validators.required, containsWordValidator('état')]],
       price: ['', [Validators.required, Validators.min(0)]],
       imageUrl: ['', Validators.required]
     });

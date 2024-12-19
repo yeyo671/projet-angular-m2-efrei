@@ -2,19 +2,12 @@
 <div class="container">
   <h1>My Ads</h1>
   <div class="row">
-    <div
-      class="col-md-4 d-flex align-items-stretch"
-      *ngFor="let product of products"
-    >
+    <div class="col-md-4 d-flex align-items-stretch" *ngFor="let product of products">
       <div class="card mb-4">
-        <img
-          [src]="product.imageUrl"
-          class="card-img-top"
-          alt="{{ product.title }}"
-        />
+        <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.title }}" />
         <div class="card-body">
           <h5 class="card-title">{{ product.title }}</h5>
-          <p class="card-text">{{ product.description }}</p>
+          <p class="card-text">{{ product.description | truncate:100}}</p>
           <p class="card-price">{{ product.price | currency }}</p>
           <p class="card-user-email">Posted by: {{ product.userEmail }}</p>
           <button class="btn btn-danger" (click)="deleteProduct(product.id)">
