@@ -11,6 +11,20 @@ Ce projet est une application web de gestion d'annonces, développée avec [Angu
 - **Filtrage des annonces** : Les utilisateurs peuvent filtrer les annonces par titre, description, prix et email de l'utilisateur.
 - **Affichage des détails des annonces** : Les utilisateurs peuvent consulter les détails d'une annonce spécifique et voir les autres annonces publiées par le même utilisateur.
 
+## Prérequis
+
+Assurez-vous d'avoir [Node.js](https://nodejs.org/) installé sur votre machine.
+
+## Installation
+
+1. Clonez le dépôt :
+   ```sh
+   git clone https://github.com/votre-utilisateur/projet-angular.git
+   cd projet-angular
+
+2. Installer les dépendances:
+    `npm install`
+
 ## Identifiant de test
 
 - username: test@gmail.com
