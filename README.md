@@ -1,3 +1,5 @@
+# Léo TRAN, Eliot MEURILLON, Ulysse GUILLOT Groupe 3
+
 # ProjetAngular
 
 Ce projet est une application web de gestion d'annonces, développée avec [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12. L'application permet aux utilisateurs de s'inscrire, de se connecter, de publier des annonces, de consulter les annonces publiées par d'autres utilisateurs et de filtrer les annonces par différents critères.
@@ -8,6 +10,11 @@ Ce projet est une application web de gestion d'annonces, développée avec [Angu
 - **Gestion des annonces** : Les utilisateurs peuvent ajouter, modifier et supprimer leurs annonces.
 - **Filtrage des annonces** : Les utilisateurs peuvent filtrer les annonces par titre, description, prix et email de l'utilisateur.
 - **Affichage des détails des annonces** : Les utilisateurs peuvent consulter les détails d'une annonce spécifique et voir les autres annonces publiées par le même utilisateur.
+
+## Identifiant de test
+
+- username: test@gmail.com
+- password: test123
 
 ## Serveur de développement
 
