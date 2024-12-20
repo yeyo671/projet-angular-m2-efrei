@@ -1,27 +1,34 @@
 # ProjetAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+Ce projet est une application web de gestion d'annonces, développée avec [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12. L'application permet aux utilisateurs de s'inscrire, de se connecter, de publier des annonces, de consulter les annonces publiées par d'autres utilisateurs et de filtrer les annonces par différents critères.
 
-## Development server
+## Fonctionnalités
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Authentification** : Les utilisateurs peuvent s'inscrire et se connecter à l'application.
+- **Gestion des annonces** : Les utilisateurs peuvent ajouter, modifier et supprimer leurs annonces.
+- **Filtrage des annonces** : Les utilisateurs peuvent filtrer les annonces par titre, description, prix et email de l'utilisateur.
+- **Affichage des détails des annonces** : Les utilisateurs peuvent consulter les détails d'une annonce spécifique et voir les autres annonces publiées par le même utilisateur.
 
-## Code scaffolding
+## Serveur de développement
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Exécutez `ng serve` pour démarrer un serveur de développement. Accédez à `http://localhost:4200/`. L'application se rechargera automatiquement si vous modifiez l'un des fichiers sources.
 
-## Build
+## Génération de code
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Exécutez `ng generate component nom-composant` pour générer un nouveau composant. Vous pouvez également utiliser `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Running unit tests
+## Construction
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Exécutez `ng build` pour construire le projet. Les artefacts de construction seront stockés dans le répertoire `dist/`.
 
-## Running end-to-end tests
+## Exécution des tests unitaires
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Exécutez `ng test` pour exécuter les tests unitaires via [Karma](https://karma-runner.github.io).
 
-## Further help
+## Exécution des tests de bout en bout
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Exécutez `ng e2e` pour exécuter les tests de bout en bout via une plateforme de votre choix. Pour utiliser cette commande, vous devez d'abord ajouter un package qui implémente des capacités de test de bout en bout.
+
+## Aide supplémentaire
+
+Pour obtenir plus d'aide sur l'Angular CLI, utilisez `ng help` ou consultez la page [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli).
