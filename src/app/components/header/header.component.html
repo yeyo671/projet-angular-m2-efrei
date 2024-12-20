@@ -22,7 +22,7 @@
           aria-label="Search" [(ngModel)]="filterName" name="filterName" />
         <input class="form-control me-2" type="number" placeholder="Prix Max" aria-label="Max Price"
           [(ngModel)]="filterPrice" name="filterPrice" />
-        <button class="btn btn-outline-success" type="submit">Filtrer</button>
+        <button class="btn btn-outline-success filter-btn" type="submit">Filtrer</button>
       </form>
       <span class="navbar-text me-3 email" (click)="filterByUserEmail(userEmail)">
         {{ userEmail }}
