@@ -9,7 +9,7 @@
           <h5 class="card-title">{{ product.title }}</h5>
           <p class="card-text">{{ product.description | truncate:100 }}</p>
           <p class="card-price">{{ product.price | currency }}</p>
-          <p class="card-user-email">Posted by: <span class="clickable-email" (click)="filterByEmail(product.userEmail)">{{ product.userEmail }}</span></p>        </div>
+          <p class="card-user-email">Posté par: <span class="clickable-email" (click)="filterByEmail(product.userEmail)">{{ product.userEmail }}</span></p>        </div>
       </div>
     </div>
   </div>
