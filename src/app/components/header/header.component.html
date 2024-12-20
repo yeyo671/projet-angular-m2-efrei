@@ -24,7 +24,7 @@
           [(ngModel)]="filterPrice" name="filterPrice" />
         <button class="btn btn-outline-success" type="submit">Filtrer</button>
       </form>
-      <span class="navbar-text me-3 email">
+      <span class="navbar-text me-3 email" (click)="filterByUserEmail(userEmail)">
         {{ userEmail }}
       </span>
       <button class="btn btn-outline-danger" (click)="logout()">Déconnexion</button>

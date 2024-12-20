@@ -30,11 +30,11 @@
   font-weight: bold;
 }
 
-.card-user-email {
-  font-size: 0.9rem;
-  color: #6c757d;
+.clickable-email {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
 }
-
 .product {
   margin-top: 2rem;
 }

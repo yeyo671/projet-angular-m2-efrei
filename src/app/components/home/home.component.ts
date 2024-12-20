@@ -41,4 +41,8 @@ export class HomeComponent implements OnInit {
       return (matchesName || matchesDescription || matchesUserEmail) && matchesPrice;
     });
   }
+
+  filterByEmail(email: string) {
+    this.filteredProducts = this.products.filter(product => product.userEmail.toLowerCase() === email.toLowerCase());
+  }
 }
