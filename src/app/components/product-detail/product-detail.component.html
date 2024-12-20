@@ -7,6 +7,9 @@
       <h1>{{ product.title }}</h1>
       <p>{{ product.description }}</p>
       <p><strong>{{ product.price | currency }}</strong></p>
+      <p>Posted by: {{ product.userEmail }}</p>
+      <button class="btn btn-primary" (click)="goBack()">Back to Products</button>
+      <button *ngIf="isCurrentUserProduct()" class="btn btn-danger" (click)="deleteProduct()">Delete Product</button>
     </div>
   </div>
 </div>
