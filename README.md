@@ -11,6 +11,13 @@ Ce projet est une application web de gestion d'annonces, développée avec [Angu
 - **Filtrage des annonces** : Les utilisateurs peuvent filtrer les annonces par titre, description, prix et email de l'utilisateur.
 - **Affichage des détails des annonces** : Les utilisateurs peuvent consulter les détails d'une annonce spécifique et voir les autres annonces publiées par le même utilisateur.
 
+## Technologies Utilisées
+
+- Angular
+- Firebase
+- Bootstrap
+- SCSS
+
 ## Prérequis
 
 Assurez-vous d'avoir [Node.js](https://nodejs.org/) installé sur votre machine.
@@ -19,37 +26,67 @@ Assurez-vous d'avoir [Node.js](https://nodejs.org/) installé sur votre machine.
 
 1. Clonez le dépôt :
    ```sh
-   git clone https://github.com/votre-utilisateur/projet-angular.git
-   cd projet-angular
+   git clone https://github.com/yeyo671/projet-angular-m2-efrei.git
+   ```
+
+2. Aller dans le dossier
+   ```sh
+   cd projet-angular-m2-efrei
+   ```
 
 2. Installer les dépendances:
     `npm install`
 
-## Identifiant de test
+# Guide de l'Application
 
-- username: test@gmail.com
-- password: test123
+## Identifiants de Test
+- **Nom d'utilisateur** : `test@gmail.com`  
+- **Mot de passe** : `test123`  
 
-## Serveur de développement
+---
 
-Exécutez `ng serve` pour démarrer un serveur de développement. Accédez à `http://localhost:4200/`. L'application se rechargera automatiquement si vous modifiez l'un des fichiers sources.
+## Serveur de Développement
+- Exécutez `ng serve` pour démarrer un serveur de développement.
+- Accédez à [http://localhost:4200/](http://localhost:4200/).
+- L'application se rechargera automatiquement si vous modifiez l'un des fichiers sources.
 
-## Génération de code
-
-Exécutez `ng generate component nom-composant` pour générer un nouveau composant. Vous pouvez également utiliser `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
 ## Construction
+- Exécutez `ng build` pour construire le projet.
+- Les artefacts de construction seront stockés dans le répertoire `dist/`.
 
-Exécutez `ng build` pour construire le projet. Les artefacts de construction seront stockés dans le répertoire `dist/`.
+---
 
-## Exécution des tests unitaires
+## Exécution des Tests Unitaires
+- Exécutez `ng test` pour exécuter les tests unitaires via Karma.
 
-Exécutez `ng test` pour exécuter les tests unitaires via [Karma](https://karma-runner.github.io).
+---
 
-## Exécution des tests de bout en bout
+## Exécution des Tests de Bout en Bout
+- Exécutez `ng e2e` pour exécuter les tests de bout en bout via une plateforme de votre choix.
+- **Note** : Pour utiliser cette commande, vous devez d'abord ajouter un package qui implémente des capacités de test de bout en bout.
 
-Exécutez `ng e2e` pour exécuter les tests de bout en bout via une plateforme de votre choix. Pour utiliser cette commande, vous devez d'abord ajouter un package qui implémente des capacités de test de bout en bout.
+---
 
-## Aide supplémentaire
+## Utilisation
+1. Inscrivez-vous ou connectez-vous à l'application.
+2. Ajoutez, modifiez ou supprimez vos annonces.
+3. Filtrez les annonces par :
+   - Titre
+   - Description
+   - Prix
+   - Email de l'utilisateur
+4. Consultez les détails d'une annonce spécifique et explorez d'autres annonces publiées par le même utilisateur.
 
-Pour obtenir plus d'aide sur l'Angular CLI, utilisez `ng help` ou consultez la page [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli).
+# Routes de l'Application
+
+| **Route**          | **Description**                                  
+|---------------------|--------------------------------------
+| `/`                | Page d'accueil                                       
+| `/signup`          | Page d'inscription                                  
+| `/login`           | Page de connexion                                   
+| `/product/:id`     | Page de détails d'un produit                         
+| `/add-product`     | Page d'ajout de produit                              
+| `/my-ads`          | Page de gestion de mes annonces                      
+
