@@ -10,7 +10,7 @@
       <p><strong>{{ product.price | currency }}</strong></p>
       <p>Posté par: {{ product.userEmail }}</p>
       <button class="btn btn-primary" (click)="goBack()">Retour à Home</button>
-      <button *ngIf="isCurrentUserProduct()" class="btn btn-danger" (click)="deleteProduct()">Supprimer PRoduit</button>
+      <button *ngIf="isCurrentUserProduct()" class="btn btn-danger" (click)="deleteProduct()">Supprimer Produit</button>
     </div>
   </div>
   <div class="row mt-5" *ngIf="otherProducts.length > 0">

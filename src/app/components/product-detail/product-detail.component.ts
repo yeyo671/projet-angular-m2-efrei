@@ -18,7 +18,7 @@ export class ProductDetailComponent implements OnInit {
   product: ProductWithUserEmail | undefined;
   otherProducts: ProductWithUserEmail[] = [];
 
-  constructor(private route: ActivatedRoute, private productService: ProductService, private router: Router) {}
+  constructor(private route: ActivatedRoute, private productService: ProductService, private router: Router) { }
 
   async ngOnInit() {
     await this.loadProductDetails();
